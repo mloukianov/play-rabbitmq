@@ -488,7 +488,7 @@ public class RabbitMQPlugin extends PlayPlugin {
          * @return 
          */
         public Address[] getAddress(String seeds) {
-            List<Address> addresses = new ArrayList<>();
+            List<Address> addresses = new ArrayList<Address>();
             if (seeds == null || seeds.isEmpty()) {
                 addresses.add(new Address("localhost", 5672));
                 return addresses.toArray(new Address[0]);
